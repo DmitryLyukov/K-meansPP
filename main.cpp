@@ -1,4 +1,6 @@
+#include "iopoints.hpp"
 #include "kmeanspp.hpp"
+
 
 int main(int argc, char* argv[]) {
     size_t N, dim;
