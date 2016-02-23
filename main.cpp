@@ -5,7 +5,11 @@ int main(int argc, char* argv[]) {
     std::cin >> N >> dim;
     std::vector<std::vector<double> > points;
     read_points(std::cin, N, dim, points);
-    const size_t num_of_clusters = atol(argv[1]);
+    
+    size_t num_of_clusters = 1;
+    if (argc > 1) {
+        num_of_clusters = atol(argv[1]);
+    }
     
     std::vector<std::set<size_t> > clusters;
         
