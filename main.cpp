@@ -3,10 +3,8 @@
 
 
 int main(int argc, char* argv[]) {
-    size_t N, dim;
-    std::cin >> N >> dim;
     std::vector<std::vector<double> > points;
-    read_points(std::cin, N, dim, points);
+    read_points(std::cin, points);
     
     size_t num_of_clusters = 1;
     if (argc > 1) {

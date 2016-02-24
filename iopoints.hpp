@@ -4,8 +4,9 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <sstream>
 
-void read_points(std::istream &inp, const size_t N, const size_t dim,
+void read_points(std::istream &inp,
         std::vector<std::vector<double> > &points);
 
 void print_clusters(std::ostream &outp,
