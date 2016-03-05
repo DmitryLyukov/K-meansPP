@@ -37,7 +37,7 @@ void print_clusters(std::ostream &outp,
         for (size_t point: clusters[i]) {
             outp << i;
             for (double crd: points[point]) {
-                outp << ' ' << crd;
+                outp << ',' << crd;
             }
             outp << std::endl;
         }
